@@ -1,0 +1,72 @@
+.Nav-bar {
+  /* text-align: center; */
+  height: '1.5em';
+  padding-top: 1em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #475300;
+  z-index: 1;
+  border: 0px;
+}
+.Navbar-Header {
+  background-color: #475300;
+  color: #FFFFFF;
+}
+.Link {
+  background-color: #475300;
+  margin-bottom: 4px;
+  border: 0px;
+}
+
+#testBrand {
+  font-size: 25px;
+  color: #C0CF67;
+}
+
+.Navbar-Brand {
+  padding: 0px;
+}
+.Navbar-Inverse .Navbar-Collapse {
+  background-color: #475300;
+  border: 0px;
+}
+
+.Nav-bar-hidden {
+  text-align: center;
+  height: '1.5em';
+  padding-top: .5em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: .95;
+  background-color: #475300;
+  z-index: 1;
+  visibility: hidden;
+  border: 0px;
+}
+.logo{
+  display: inline-block;
+  font-size: 1.5em;
+  padding-top: 1.5em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  float: left;
+}
+.menu{
+  padding-top: 1.5em;
+  list-style: none;
+  float: right;
+}
+.menu-item{
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  padding-bottom: 0;
+  float: left;
+}
+.container-fluid {
+  color: #ffffff;
+  width: 100%;
+}
