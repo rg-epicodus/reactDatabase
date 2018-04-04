@@ -6,6 +6,7 @@ import {
 import Home from '../Home';
 import ButtonClick from '../ButtonClick';
 import TimeDisplay from '../TimeDisplay';
+import LoginControl from '../LoginControl';
 import './styles.css';
 
 class Router extends Component {
@@ -16,6 +17,7 @@ class Router extends Component {
           <Route exact path="/" component={Home}/>
           <Route path="/buttons" component={ButtonClick}/>
           <Route path="/time" component={TimeDisplay}/>
+          <Route path="/login" component={LoginControl}/>
         </Switch>
       </div>
     );
