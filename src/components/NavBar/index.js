@@ -6,10 +6,10 @@ import './styles.css';
 class NavBar extends Component {
   render() {
     return(
-      <Navbar inverse collapseOnSelect>
+      <Navbar inverse collapseOnSelect className={this.props.className}>
         <Navbar.Header>
           <Navbar.Brand>
-            <Link to="/" id="testBrand">React-Bootstrap</Link>
+            <Link to="/" id="testBrand">Practice Nav Bar</Link>
           </Navbar.Brand>
           <Navbar.Toggle />
         </Navbar.Header>
