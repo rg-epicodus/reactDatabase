@@ -1,6 +1,7 @@
 .Footer {
   padding: 20px;
   color: white;
+  text-align: center;
   background-color: black;
   font-size: 8px;
   font-weight: lighter;
@@ -10,15 +11,17 @@
   font-size: 12px;
   font: typeface-roboto;
 }
+
 .Footer a {
   color: white;
 }
+
 .icon{
   height: 1em;
   /* padding-right: .5em; */
   line-height: 1em;
   width: 1em;
-  font-size: 2em;
+  font-size: 3em;
 }
 .footer-icon .icon{
   background: rgba(255, 255, 255, 0);
