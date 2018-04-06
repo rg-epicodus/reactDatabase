@@ -1,0 +1,25 @@
+html {
+  font-family: sans-serif;
+}
+
+.columns {
+  display: flex;
+}
+
+.column {
+  background: #eee;
+  border: 5px solid #ccc;
+  flex: 1;
+  padding: 20px;
+}
+
+.main-column {
+  flex: 2;
+}
+
+#map_canvas {
+  margin: 25px;
+  border: 3px solid red;
+  height: 200px;
+  width: 200px;
+}
