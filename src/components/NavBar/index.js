@@ -21,13 +21,8 @@ class NavBar extends Component {
             <NavItem eventKey={2} href="/time">
               Time
             </NavItem>
-<<<<<<< HEAD
-            <NavDropdown eventKey={3} title="Dropdown Menu" id="basic-nav-dropdown">
-              <MenuItem eventKey={3.1}>Action</MenuItem>
-=======
             <NavDropdown eventKey={3} title="Demographics" id="basic-nav-dropdown">
               <MenuItem eventKey={3.1} href="/address">Address</MenuItem>
->>>>>>> 6d76e89a879f8a9bdb73cb1d2fba32caec7b2128
               <MenuItem eventKey={3.2}>Another action</MenuItem>
               <MenuItem eventKey={3.3}>Something else here</MenuItem>
               <MenuItem divider />
