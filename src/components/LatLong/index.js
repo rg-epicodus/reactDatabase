@@ -9,12 +9,23 @@ class LatLong extends Component {
       latitude: '',
       longitude: '',
     }
-
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
     this.getMyLocation = this.getMyLocation.bind(this)
   }
 
   componentDidMount() {
     this.getMyLocation()
+  }
+
+  handleChange(e) {
+    this.setState({
+      [e.target.name]: e.target.value
+    });
+  }
+
+  handleSubmit(e) {
+    e.preventDefault();
   }
 
   getMyLocation() {
@@ -38,8 +49,16 @@ class LatLong extends Component {
 
     return (
       <div>
-        <p>Your latitude: <input type="text" value={latitude} /></p>
-        <p>Your longitude: <input type="text" value={longitude} /></p>
+        <section className="inputAddress">
+          <form onSubmit={this.handleSubmit}>
+            <input type="text" name="address" placeholder="Address" onChange={this.handleChange} value={this.state.address}/>
+            <button>Go</button>
+          </form>
+        </section>
+          <div>
+            <p>Your latitude: <input type="text" value={latitude} /></p>
+            <p>Your longitude: <input type="text" value={longitude} /></p>
+          </div>
       </div>
     )
   }
