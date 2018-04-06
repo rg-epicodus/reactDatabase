@@ -7,15 +7,15 @@ class ButtonClick extends Component {
   this.handleOtherClick = this.handleOtherClick.bind(this);
   }
   handleOtherClick() {
-    console.log('handleOtherClick(): Click happened');
+    alert('handleOtherClick(): Click happened');
   }
 
   handleAnotherClick() {
-    console.log('handleAnotherClick(): Click happened');
+    alert('handleAnotherClick(): Click happened');
   }
 
   handleClick = () => {
-    console.log('handleClick(): Click happened');
+    alert('handleClick(): Click happened');
   }
 
   render() {

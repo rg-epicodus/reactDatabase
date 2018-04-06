@@ -28,6 +28,7 @@ class LoginControl extends Component {
 
     return (
       <div>
+        <h1>This is: LoginControl Component</h1>
         <Greeting isLoggedIn={isLoggedIn} />
         {button}
       </div>
