@@ -8,6 +8,7 @@ class LatLong extends Component {
     this.state = {
       latitude: '',
       longitude: '',
+      address: ''
     }
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -26,6 +27,12 @@ class LatLong extends Component {
 
   handleSubmit(e) {
     e.preventDefault();
+    const query = {
+      address: this.state.address
+    }
+    this.setState({
+      address: ''
+    })
   }
 
   getMyLocation() {
@@ -56,6 +63,7 @@ class LatLong extends Component {
           </form>
         </section>
           <div>
+            <p>Your query: {this.state.address}</p>
             <p>Your latitude: <input type="text" value={latitude} /></p>
             <p>Your longitude: <input type="text" value={longitude} /></p>
           </div>
