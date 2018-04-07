@@ -23,7 +23,7 @@ class NavBar extends Component {
             </NavItem>
             <NavDropdown eventKey={3} title="Demographics" id="basic-nav-dropdown">
               <MenuItem eventKey={3.1} href="/address">Address</MenuItem>
-              <MenuItem eventKey={3.2}>Another action</MenuItem>
+              <MenuItem eventKey={3.2} href="/schedule">Schedule</MenuItem>
               <MenuItem eventKey={3.3}>Something else here</MenuItem>
               <MenuItem divider />
               <MenuItem eventKey={3.4}>Separated link</MenuItem>

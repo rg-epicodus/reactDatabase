@@ -9,6 +9,7 @@ import TimeDisplay from '../TimeDisplay';
 import LoginControl from '../LoginControl';
 import Contact from '../Contact';
 import LatLong from '../LatLong';
+import Schedule from '../Schedule';
 import './styles.css';
 
 class Router extends Component {
@@ -22,6 +23,7 @@ class Router extends Component {
           <Route path="/join_now" component={Contact}/>
           <Route path="/login" component={LoginControl}/>
           <Route path="/address" component={LatLong}/>
+          <Route path="/schedule" component={Schedule}/>
         </Switch>
       </div>
     );
