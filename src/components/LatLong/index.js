@@ -56,17 +56,21 @@ class LatLong extends Component {
 
     return (
       <div>
-        <section className="inputAddress">
-          <form onSubmit={this.handleSubmit}>
+        <section>
+          <div>
+            <p>Your current latitude: <input type="text" value={latitude} /></p>
+            <p>Your current longitude: <input type="text" value={longitude} /></p>
+          </div>
+        </section>
+        <div>
+          <form onSubmit={this.handleSubmit}  className="inputAddress">
             <input type="text" name="address" placeholder="Address" onChange={this.handleChange} value={this.state.address}/>
             <button>Go</button>
           </form>
-        </section>
           <div>
-            <p>Your query: {this.state.address}</p>
-            <p>Your latitude: <input type="text" value={latitude} /></p>
-            <p>Your longitude: <input type="text" value={longitude} /></p>
-          </div>
+            <p>Your query: {this.setState.address}</p>
+          </div>  
+        </div>
       </div>
     )
   }
