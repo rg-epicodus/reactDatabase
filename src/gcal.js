@@ -1,10 +1,9 @@
 import request from 'superagent';
-import { REACT_APP_API_KEY } from './.env';
-import { REACT_APP_CALENDAR_ID } from './.env';
+import { REACT_APP_API_KEY } from './env.js';
+import { REACT_APP_CALENDAR_ID } from './env.js';
 
 let url = `https://www.googleapis.com/calendar/v3/calendars/${REACT_APP_CALENDAR_ID}/events?key=${REACT_APP_API_KEY}`
-console.log(url);
-console.log(process.env.NODE_ENV);
+
 export function getEvents (callback) {
   request
     .get(url)
