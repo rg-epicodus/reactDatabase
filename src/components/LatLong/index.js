@@ -27,9 +27,9 @@ class LatLong extends Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    const query = {
-      address: this.state.address
-    }
+    // const query = {
+    //   address: this.state.address
+    // }
     this.setState({
       address: ''
     })
@@ -69,7 +69,7 @@ class LatLong extends Component {
           </form>
           <div>
             <p>Your query: {this.setState.address}</p>
-          </div>  
+          </div>
         </div>
       </div>
     )
