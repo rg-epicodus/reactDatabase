@@ -10,8 +10,6 @@ export function getEvents (callback) {
   request
     .get(url)
     .end((err, resp) => {
-      console.log("in json response");
-      console.log(resp.body.items)
       if (!err) {
         const events = []
         JSON.parse(resp.text).items.map((event) => {

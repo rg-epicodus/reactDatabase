@@ -24,7 +24,7 @@ class Schedule extends Component {
       <BigCalendar
         style={{height: '420px'}}
         events={this.state.events}
-        views={['month', 'week', 'day']}
+        views={['month']}
         step={30}
         defaultDate={new Date(2018, 3, 1)}
       />
