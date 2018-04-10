@@ -1,5 +1,4 @@
 import request from 'superagent';
-import moment from 'moment';
 
 import { REACT_APP_API_KEY } from './env.js';
 import { REACT_APP_CALENDAR_ID } from './env.js';
@@ -13,7 +12,6 @@ export function getEvents (callback) {
       if (!err) {
         const events = []
         JSON.parse(resp.text).items.map((event) => {
-          
           events.push({
             start: event.start.date || event.start.dateTime,
             end: event.end.date || event.end.dateTime,
