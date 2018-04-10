@@ -10,6 +10,7 @@ import LoginControl from '../LoginControl';
 import Contact from '../Contact';
 import LatLong from '../LatLong';
 import Schedule from '../Schedule';
+import NotFound from '../NotFound';
 import './styles.css';
 
 class Router extends Component {
@@ -24,6 +25,7 @@ class Router extends Component {
           <Route path="/login" component={LoginControl}/>
           <Route path="/address" component={LatLong}/>
           <Route path="/schedule" component={Schedule}/>
+          <Route component={NotFound} />
         </Switch>
       </div>
     );
