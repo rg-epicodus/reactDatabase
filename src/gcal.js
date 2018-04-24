@@ -17,7 +17,7 @@ export function getEvents (callback) {
             end: event.end.date || event.end.dateTime,
             title: event.summary,
           })
-        })
+        }) 
         callback(events)
       }
     })
